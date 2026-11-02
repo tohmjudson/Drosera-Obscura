@@ -90,6 +90,22 @@ relevant sub-README.
    protocol — see `Drosera2026/README.md` §2 for the two-engine system
    that keeps sound design isolated from robot firmware.
 
+### Local secrets and example config
+
+The ESP32 head controller uses `Secrets.h` and `Secrets.cpp` for Wi-Fi and
+network values. These files are intentionally local-only and should not be
+committed to version control, even if they contain placeholder or dummy data.
+
+Use the example template files in `DroseraHeadController/` as your starting
+point:
+
+- `Secrets.example.h`
+- `Secrets.example.cpp`
+
+Copy them to `Secrets.h` and `Secrets.cpp`, fill in your own values, and keep
+those real files out of Git. The repo's `.gitignore` already excludes the
+actual `Secrets.*` files.
+
 ---
 
 ## Which doc do I need?

@@ -1,0 +1,29 @@
+# General
+.DS_Store
+.localized
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[]
+
+# Project-specific secrets
+DroseraHeadController/Secrets.*
+
+# Generated build artifacts
+build/
+out/
+*.o
+*.obj
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.log
+
+# Editor / local tooling
+.vscode/
+.idea/
+*.swp
+*~
